@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Portfolio - Web Developer</title>
+    <meta name="description" content="Computer Science portfolio showcasing HTML, CSS, and JavaScript expertise">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo gradient-text">CS Portfolio</div>
+            <div class="nav-links">
+                <a href="#projects" class="nav-link animated-underline">Projects</a>
+                <a href="#about" class="nav-link animated-underline">About</a>
+                <a href="#contact" class="nav-link animated-underline">Contact</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-effects">
+            <div class="bg-circle bg-circle-1"></div>
+            <div class="bg-circle bg-circle-2"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title fade-in-up">
+                Computer Science
+                <span class="hero-title-bold">Developer</span>
+            </h1>
+            <p class="hero-subtitle fade-in-up delay-300">
+                Building dynamic web experiences with 
+                <span class="gradient-text font-medium">HTML</span>,
+                <span class="gradient-text font-medium">CSS</span>, and
+                <span class="gradient-text font-medium">JavaScript</span>
+            </p>
+            <button class="hero-cta fade-in-up delay-500" onclick="scrollToSection('projects')">
+                View Projects
+                <span class="cta-icon">↓</span>
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title gradient-text">Projects</h2>
+                <p class="section-subtitle">A showcase of my real-world projects using various technologies</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card scroll-reveal">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop" alt="Event Reservation System" class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3 class="project-title">Event Reservation System</h3>
+                                <p class="project-description">A desktop application for managing event reservations, built with Java and MySQL.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Java</span>
+                                    <span class="tag">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card scroll-reveal">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop" alt="Online Guitar Store" class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3 class="project-title">Online Guitar Store</h3>
+                                <p class="project-description">An e-commerce platform for buying guitars online, developed using Java and MySQL.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Java</span>
+                                    <span class="tag">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card scroll-reveal">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop" alt="SmartLocal Barangay Digital Management System" class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3 class="project-title">SmartLocal Barangay Digital Management System</h3>
+                                <p class="project-description">A web-based system for barangay management, using HTML, CSS, JavaScript, PHP, and MySQL.</p>
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">PHP</span>
+                                    <span class="tag">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card scroll-reveal">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop" alt="Traffic Sign Classification App" class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3 class="project-title">Traffic Sign Classification App</h3>
+                                <p class="project-description">A mobile app for classifying traffic signs using machine learning, built with Android Studio, Java, and TensorFlow.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Android Studio</span>
+                                    <span class="tag">Java</span>
+                                    <span class="tag">TensorFlow</span>
+                                    <span class="tag">Machine Learning</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card scroll-reveal">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop" alt="Common Bikes Identification App" class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3 class="project-title">Common Bikes Identification App</h3>
+                                <p class="project-description">An object detection app for identifying common bikes, using Android Studio, Java, and TensorFlow.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Android Studio</span>
+                                    <span class="tag">Java</span>
+                                    <span class="tag">TensorFlow</span>
+                                    <span class="tag">Object Detection</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card scroll-reveal">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop" alt="Online Snacks Delivery App" class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3 class="project-title">Online Snacks Delivery App</h3>
+                                <p class="project-description">A mobile app for ordering snacks online, built with Android Studio, Java, PHP, and MySQL.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Android Studio</span>
+                                    <span class="tag">Java</span>
+                                    <span class="tag">PHP</span>
+                                    <span class="tag">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title gradient-text">About Me</h2>
+                <p class="section-subtitle">Computer Science student passionate about web development and software engineering</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image scroll-reveal">
+                    <div class="glass-card">
+                        <img src="aksel.jpg" alt="Aksel Profile" class="profile-image">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <div class="about-block scroll-reveal">
+                        <h3 class="about-subtitle gradient-text">Programming Languages</h3>
+                        <ul class="about-description">
+                            <li>HTML: 85%</li>
+                            <li>CSS: 80%</li>
+                            <li>JavaScript: 80%</li>
+                            <li>Java: 80%</li>
+                            <li>C: 90%</li>
+                            <li>Python: 70%</li>
+                            <li>Android Studio: 70%</li>
+                            <li>PHP: 80%</li>
+                            <li>MySQL: 80%</li>
+                        </ul>
+                    </div>
+                    <div class="about-block scroll-reveal">
+                        <h3 class="about-subtitle gradient-text">Web & App Development Skills</h3>
+                        <p class="about-description">Experienced in building web and mobile applications using a variety of modern technologies and frameworks. I enjoy solving real-world problems and creating efficient, user-friendly solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title gradient-text">Let's Connect</h2>
+                <p class="section-subtitle">Interested in collaborating or discussing computer science topics?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info scroll-reveal">
+                    <div class="glass-card">
+                        <h3 class="contact-subtitle gradient-text">Get in Touch</h3>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">@</div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Email</p>
+                                    <p class="contact-value">axltagat7@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">📞</div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Phone</p>
+                                    <p class="contact-value">09661569534</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Location</p>
+                                    <p class="contact-value">Sta. Cruz, Calape, Bohol</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper scroll-reveal">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project or let's discuss CS topics..." rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">
+                            <span class="submit-text">Send Message</span>
+                            <span class="submit-loading" style="display: none;">Sending...</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+   
+
+    <!-- Success Toast -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <div class="toast-icon">✓</div>
+            <div class="toast-message">Message sent successfully!</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
