@@ -651,6 +651,17 @@ body {
     color: var(--text-secondary);
 }
 
+.contact-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+}
+
 /* Contact Form */
 .contact-form {
     display: flex;
