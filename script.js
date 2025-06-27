@@ -1,4 +1,3 @@
-
 // Theme Management
 const themeToggle = document.getElementById('themeToggle');
 const themeIcon = themeToggle.querySelector('.theme-icon');
@@ -68,12 +67,23 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('revealed');
+            
+            // Animate progress bars when skills section is revealed
+            if (entry.target.classList.contains('skills-progress') || 
+                entry.target.closest('.skills-progress')) {
+                animateProgressBars();
+            }
         }
     });
 }, observerOptions);
 
 // Observe all scroll-reveal elements
 document.querySelectorAll('.scroll-reveal').forEach(el => {
+    observer.observe(el);
+});
+
+// Also observe the skills-progress container specifically
+document.querySelectorAll('.skills-progress').forEach(el => {
     observer.observe(el);
 });
 
@@ -190,3 +200,20 @@ const throttledScrollHandler = throttle(() => {
 }, 16);
 
 window.addEventListener('scroll', throttledScrollHandler);
+
+// Progress Bar Animation
+function animateProgressBars() {
+    const progressBars = document.querySelectorAll('.progress-fill');
+    
+    // Wait for slide-in animation to complete, then animate progress bars
+    setTimeout(() => {
+        progressBars.forEach((bar, index) => {
+            const targetWidth = bar.getAttribute('data-width') || bar.style.width;
+            bar.style.width = '0%';
+            
+            setTimeout(() => {
+                bar.style.width = targetWidth;
+            }, index * 100); // Stagger the progress bar animations
+        });
+    }, 1000); // Wait for slide-in animations to complete
+}
